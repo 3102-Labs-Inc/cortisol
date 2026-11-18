@@ -106,7 +106,7 @@
     const formatReading = new Intl.NumberFormat('en', { maximumFractionDigits: 2 });
     ['curve-waking-value', 'curve-morning-value', 'curve-evening-value'].forEach((id, i) => { $(id).textContent = formatReading.format(values[i]); });
     // Reuse the existing Evening level design example, not new clinical thresholds.
-    const reference = { lower: [16, 30, 5], upper: [35, 65, 7] };
+    const reference = (window.TraceReportOptions && window.TraceReportOptions.curveReference) || { lower: [16, 30, 5], upper: [35, 65, 7] };
     const referenceStyle = window.TraceReferenceRanges.tokens;
     const ceiling = Math.max(...values, ...reference.upper) * 1.2;
     const x = t => left + (right - left) * t / data.eveningHours;
