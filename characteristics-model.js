@@ -1,5 +1,5 @@
 /* Participant calculations use the existing local day-profile definitions.
-   Formula/range provenance: docs/provenance/anshika-characteristics.json.
+   Formula and range provenance are kept in the private source documentation.
    Reference bands are the prototype's existing illustrative bands. */
 (function (root) {
   'use strict';
