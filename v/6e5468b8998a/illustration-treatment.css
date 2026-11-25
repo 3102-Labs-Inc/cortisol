@@ -1,4 +1,0 @@
-/* Generated from art-direction/illustration-treatment.json. */
-:root{--trace-model-opacity:0.8;--trace-colour-opacity:1}
-.trace-model{opacity:var(--trace-model-opacity)}
-.trace-colour,.trace-glow{opacity:var(--trace-colour-opacity)}
